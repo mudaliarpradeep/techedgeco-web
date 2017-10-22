@@ -42,11 +42,17 @@ MongoClient.connect('mongodb://techedgeco:techedgeco@ds121965.mlab.com:21965/tec
       .request(emailData)
         .catch(handleError);
 
-
-    res.redirect('/');
+    db.collection('contactus').save(req.body, function(err, result) {
+        if (err) 
+            console.log(err);
+        else {
+            console.log('Form saved to database');
+        } 
+           
+        res.redirect('/');
+    });
 })
  
-
 function handleError (err) {
     throw new Error(err.ErrorMessage);
-  }
+}
