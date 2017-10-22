@@ -1,0 +1,29 @@
+{
+  "name": "techedgeco",
+  "version": "1.0.0",
+  "description": "Website for Tech Edge Co Pvt Ltd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mudaliarpradeep/techedgeco-web.git"
+  },
+  "author": "mudaliarpradeep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mudaliarpradeep/techedgeco-web/issues"
+  },
+  "homepage": "https://github.com/mudaliarpradeep/techedgeco-web#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33",
+    "nodemailer": "^4.2.0",
+    "nodemailer-smtp-transport": "^2.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
